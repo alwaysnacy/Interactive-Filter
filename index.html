@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Interactive Filter</title>
+<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+</head>
+
+<body>
+  <h1>Have fun filtering your image!</h1>
+  <canvas id="can"></canvas>
+  <h2>Load Image</h2>
+  <p><input type="file" id="finput" multiple="false" access="image/*" onchange="loadImage()"></p>
+  <h2>Choose Filter</h2>
+  <p><input type="button" value="Grayscale" id="gray" onclick="makeGray()"> <input type="button" value="Red" id="red" onclick="makeRed()"> <input type="button" value="Chromatic" id="chromatic" onclick="makeChromatic()"></p>
+  <p><input type="button" value="Reset" id="reset" onclick="reset()"></p>
+</body>
+  
